@@ -3,4 +3,9 @@
     <color name="colorPrimary">#009688</color>
     <color name="colorPrimaryDark">#00796b</color>
     <color name="colorAccent">#00bfa5</color>
+
+    <!-- Intro Activity -->
+    <color name="button_font_black">#dddddd</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
