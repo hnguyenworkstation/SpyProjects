@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <!-- Profile Dialog -->
+    <color name="profile_text_link">#5DBCD2</color>
+    <color name="profile_text_name">#3E80B4</color>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_profile_shape"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/profile_padding"
+        android:paddingLeft="@dimen/profile_padding"
+        android:paddingBottom="@dimen/profile_padding">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/main_image"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"
+            android:layout_marginRight="@dimen/profile_padding"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_name"
+                android:text="Hung Nguyen"
+                android:textColor="@color/profile_text_name"
+                android:textAllCaps="false"
+                android:textSize="@dimen/profile_name_size"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star"/>
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nFollowers"
+                    android:text="50M"
+                    android:textColor="@color/profile_text_link"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/profile_link_size"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Follow"
+            android:background="@drawable/active_button"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/profile_text_name"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:layout_weight="1"
+            android:background="@drawable/active_button"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/profile_text_name"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <at.markushi.ui.CircleButton
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        app:cb_color="#99CC00"
+        app:cb_pressedRingWidth="8dip" />
+
+</LinearLayout>
